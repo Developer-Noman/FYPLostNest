@@ -1,0 +1,68 @@
+/* Loadings.module.css */
+
+.loadingcontainer {
+  position: fixed;
+  bottom: 0;
+  left: -70vw; /* Initial position off-screen to the left */
+  width: 70vw;
+  max-width: 260px;
+  background: linear-gradient(135deg, #311465, #1c0f3e);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s forwards; /* Animation to slide in from left */
+}
+
+.bouncingdots {
+  display: flex;
+  align-items: flex-end;
+}
+
+.loadingText {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bolder;
+  margin-right: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0.4rem;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1.2rem);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .loadingcontainer {
+    width: 90vw;
+  }
+}

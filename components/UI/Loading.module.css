@@ -1,0 +1,230 @@
+/* Loading.module.css */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jimuprimaryloading:before,
+.jimuprimaryloading:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+.jimuprimaryloading:before {
+  left: -9.996px;
+}
+
+.jimuprimaryloading:after {
+  left: 9.996px;
+  -webkit-animation-delay: 0.32s !important;
+  animation-delay: 0.32s !important;
+}
+
+.jimuprimaryloading:before,
+.jimuprimaryloading:after,
+.jimuprimaryloading {
+  background: #311465;
+  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  width: 6.8px;
+  height: 16px;
+}
+
+.jimuprimaryloading {
+  text-indent: -9999em;
+  margin: auto;
+  position: absolute;
+  right: calc(50% - 3.4px);
+  top: calc(50% - 8px);
+  -webkit-animation-delay: 0.16s !important;
+  animation-delay: 0.16s !important;
+}
+
+@-webkit-keyframes loading-keys-app-loading {
+  0%,
+  80%,
+  100% {
+    opacity: 0.75;
+    box-shadow: 0 0 #311465;
+    height: 16px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -4px #311465;
+    height: 20px;
+  }
+}
+
+@keyframes loading-keys-app-loading {
+  0%,
+  80%,
+  100% {
+    opacity: 0.75;
+    box-shadow: 0 0 #311465;
+    height: 16px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -4px #311465;
+    height: 20px;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .jimuprimaryloading {
+    width: 5.4px;
+    height: 13px;
+    right: calc(50% - 2.7px);
+    top: calc(50% - 6.5px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .jimuprimaryloading {
+    width: 6.5px;
+    height: 15px;
+    right: calc(50% - 3.25px);
+    top: calc(50% - 7.5px);
+  }
+}
+
+@media (min-width: 1025px) {
+  .jimuprimaryloading {
+    width: 6.8px;
+    height: 16px;
+    right: calc(50% - 3.4px);
+    top: calc(50% - 8px);
+  }
+}
+
+/* .loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.text {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #311465;
+  position: relative;
+  top: 34rem;
+  left: 62rem;
+}
+.jimuprimaryloading:before,
+.jimuprimaryloading:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+.jimuprimaryloading:before {
+  left: -19.992px;
+}
+
+.jimuprimaryloading:after {
+  left: 19.992px;
+  -webkit-animation-delay: 0.32s !important;
+  animation-delay: 0.32s !important;
+}
+
+.jimuprimaryloading:before,
+.jimuprimaryloading:after,
+.jimuprimaryloading {
+  background: #311465;
+  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  width: 13.6px;
+  height: 32px;
+}
+
+.jimuprimaryloading {
+  text-indent: -9999em;
+  margin: auto;
+  position: absolute;
+  right: calc(50% - 6.8px);
+  top: calc(50% - 16px);
+  -webkit-animation-delay: 0.16s !important;
+  animation-delay: 0.16s !important;
+}
+
+@-webkit-keyframes loading-keys-app-loading {
+  0%,
+  80%,
+  100% {
+    opacity: 0.75;
+    box-shadow: 0 0 #311465;
+    height: 32px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #311465;
+    height: 40px;
+  }
+}
+
+@keyframes loading-keys-app-loading {
+  0%,
+  80%,
+  100% {
+    opacity: 0.75;
+    box-shadow: 0 0 #311465;
+    height: 32px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #311465;
+    height: 40px;
+  }
+} */
+
+/*
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .text {
+    font-size: 2.5rem;
+
+    position: relative;
+    top: 64rem;
+    left: 20rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .text {
+    font-size: 2.5rem;
+
+    position: relative;
+    top: 58rem;
+    left: 32rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .text {
+    font-size: 2.5rem;
+
+    position: relative;
+    top: 64rem;
+    left: 32rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .text {
+    position: relative;
+    top: 40rem;
+    left: 56rem;
+  }
+}
+*/

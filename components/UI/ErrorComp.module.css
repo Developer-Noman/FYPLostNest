@@ -1,0 +1,27 @@
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11.5rem;
+}
+
+.heading1 {
+  font-size: 10rem;
+  color: #311465;
+}
+.div1 {
+  text-align: center;
+}
+.para1 {
+  font-size: 3rem;
+  font-weight: bolder;
+
+  text-transform: uppercase;
+}
+
+.para2 {
+  font-size: 2rem;
+  color: grey;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}

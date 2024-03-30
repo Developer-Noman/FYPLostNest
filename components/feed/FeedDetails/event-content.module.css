@@ -1,0 +1,17 @@
+.content {
+  font-size: 1.5rem;
+  color: #3a3a3a;
+  width: 90%;
+  max-width: 40em;
+  margin: auto;
+  margin-top: 8rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .content {
+    font-size: 1.7rem;
+  }
+}

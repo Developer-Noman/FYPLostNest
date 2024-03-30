@@ -1,0 +1,341 @@
+/* .main {
+  
+  margin-top: 2rem;
+} */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.marginm {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagest {
+  width: auto;
+
+  height: 25rem;
+}
+.grider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.labels {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.span1 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.inputfield {
+  border-radius: 3px;
+  border: 1px solid #311465;
+  outline: none;
+  color: #311465;
+  padding: 4px;
+
+  background: #efeff0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.button89 {
+  --b: 3px;
+  --s: 0.45em;
+  --color: rgb(235, 17, 17);
+  margin: 1.5rem;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button89:hover,
+.button89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .labels {
+    font-size: 2.5rem;
+  }
+
+  .inputfield {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+}
+
+.loadingcontainer {
+  position: fixed;
+  right: -100%; /* Initially off-screen */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: right 0.3s ease-in-out;
+  animation: slideIn 0.5s forwards; /* Animation to slide in from left */
+}
+
+@keyframes slideIn {
+  to {
+    right: 20px;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .loadingcontainer {
+    width: 100vw;
+  }
+  @keyframes slideIn {
+    to {
+      right: 0;
+    }
+  }
+}
+
+/* new 
+
+overlay */
+
+.formcontainer {
+  /* form container to hold 1st overlay-form element containing email and date input*/
+  background-color: var(--alice-blue-1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlayForm {
+  /* this itself form class just setting container as flex and then as flex by default make it into row i am changing its direction to column and making it exactally at center by using align-items: center;
+  justify-content: center; two properties  */
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayForm > label {
+  margin-bottom: 5px;
+}
+
+.overlayForm > input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--gradient);
+  transition: border-color 0.3s;
+}
+
+.overlayForm > input:focus {
+  border-color: var(--primary-color);
+}
+
+.overlayForm > .btnn2 {
+  /*
+  setting padding of al 4 sides starting from Top, right, bottom, left
+  */
+  padding: 10px 20px 10px 20px;
+}
+
+.overlayForm > .inputdate {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup,
+.popup2 {
+  /* Set the height and width to cover the entire viewport */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Set the background color with some transparency */
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* Check if backdrop-filter is supported (for blurring the background) */
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+  /* If supported, apply backdrop filter for background blur */
+  .popup,
+  .popup2 {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.popupcontent,
+.popupcontent2 {
+  /* Position the content absolutely at the center of the viewport */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  /* Hide overflow and set initial opacity and scale for animation */
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0.25);
+  transform: translate(-50%, -50%) scale(0.25);
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
+}
+
+.popupcenter {
+  width: 66.6666667%;
+
+  display: table-cell; /*This property specifies that the element should be displayed as a table cell. The use of table-cell allows for vertical alignment within the parent container. This is often used in conjunction with display: table; on the parent to achieve vertical centering.
+  */
+  vertical-align: middle; /*This property vertically aligns the content within the table cell to the middle. It is used in combination with display: table-cell; for vertical centering.*/
+  padding: 3rem 5rem;
+}
+
+.popup:target,
+.popup2:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popupcontent,
+.popup2:target .popupcontent2 {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+.popupclose:link,
+.popupclose:visited {
+  color: #777;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popupclose:hover,
+.popupclose2:hover {
+  color: var(--carolina-blue);
+}
+
+.popupcenter2 {
+  width: 50.6666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+.popupclose2:link,
+.popupclose2:visited {
+  color: #777;
+  position: absolute;
+  top: 4rem;
+  right: 6.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popupclose2:hover {
+  color: var(--carolina-blue);
+}
+
+/*when screen size is b/w 320px-480 for small devices like mobile phone*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /*changing the position cross(X) sign on overlay form for responsiveness*/
+  .popupclose2:link,
+  .popupclose2:visited {
+    top: 3rem;
+    right: 5.7rem;
+  }
+
+  /*increasing length of both email input+date input*/
+  .overlayForm > input {
+    width: 100%;
+  }
+
+  .overlayForm > .inputdate {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .overlayForm > input {
+    width: 100%;
+  }
+
+  .overlayForm > .inputdate {
+    width: 80%;
+  }
+
+  .popupclose2:link,
+  .popupclose2:visited {
+    top: 3rem;
+    right: 5.7rem;
+  }
+}

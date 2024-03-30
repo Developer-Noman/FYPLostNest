@@ -1,0 +1,103 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+
+/* CSS */
+.button89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: white;
+  margin: 1.5rem;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button89:hover,
+.button89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .form label {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .form textarea {
+    font-size: 2rem;
+  }
+  .form textarea {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+  .twobtn {
+    text-align: center;
+    align-items: center;
+  }
+  .button89 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .form label {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .form textarea {
+    font-size: 1.5rem;
+  }
+  .form textarea {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+  .twobtn {
+    text-align: center;
+    align-items: center;
+  }
+  .button89 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) {
+}
+

@@ -1,0 +1,201 @@
+.auth {
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 25rem;
+  border-radius: 6px;
+  background-color: #38015c;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+.auth h1 {
+  text-align: center;
+  color: white;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  font: inherit;
+  background-color: #f1e1fc;
+  color: #38015c;
+  border-radius: 4px;
+  border: 1px solid white;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem;
+}
+.googleButton {
+  /* Basic button styles */
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* Google brand colors */
+  background-color: #4285F4;
+  color: #fff;
+
+  /* Gradient overlay for depth */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+
+  /* Icon and text layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  /* &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(https://developers.google.com/identity/images/g_logo_32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+ 
+  &:hover,
+  &:focus {
+    background-color: #3472F3;
+  } */
+}
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #9f5ccc;
+  border: 1px solid #9f5ccc;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions button:hover {
+  background-color: #873abb;
+  border-color: #873abb;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #9f5ccc;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: #ae82cc;
+}
+
+/*-----------------------------------
+-
+----------------------------*/
+
+.col1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 20rem;
+}
+
+.formbox {
+  width: 300px;
+  height: 450px;
+  position: relative;
+  border-radius: 15px; /* Reduced border-radius for a modern look */
+  background: #474545cc; /* Increased opacity for better contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  /* Adding transition for a smooth hover effect */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.formbox:hover {
+  background-color: rgba(71, 69, 69, 0.9); /* Darker background on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.mainheading {
+  color: #311465;
+
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+
+.form {
+  position: relative;
+
+  margin: 0 auto 100px;
+
+  padding: 45px;
+
+  text-align: center;
+}
+
+.form input {
+  font-family: sans-serif;
+
+  outline: none;
+
+  border: none;
+
+  border-bottom: 1px solid black;
+
+  width: 100%;
+
+  margin: 0 0 15px;
+
+  padding: 15px;
+
+  font-size: 14px;
+}
+
+.form .message {
+  font-size: 12px;
+
+  margin: 15px 0 0;
+
+  color: white;
+}
+
+.link {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.defination {
+  text-align: left;
+
+  font-size: 30px;
+
+  color: white;
+
+  font-family: "Kaushan Script", cursive;
+
+  padding-left: 60px;
+}

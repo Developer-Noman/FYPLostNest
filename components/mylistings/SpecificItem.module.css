@@ -1,0 +1,128 @@
+.item {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  margin: 1rem;
+  padding: 2rem;
+
+  width: 60%;
+  height: auto;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.nestedContainer {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.head1 {
+  background-color: #311465;
+  padding: 5px 30px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: white;
+}
+
+.head3 {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.head2 {
+  text-transform: capitalize;
+}
+
+.diverr1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anchordiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .item {
+    width: 80%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .item {
+    width: 80%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .item {
+    width: 70%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .item {
+    width: 60%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .item {
+    width: 80%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,107 @@
+.list {
+  list-style: none;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5rem;
+}
+.linkpara {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.linkpara a {
+  font-size: 1.5rem;
+  transition: font-size 0.3s ease-in-out;
+}
+.linkpara a:hover {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link {
+  color: #311465;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* CSS */
+.button52 {
+  color: white;
+  margin: 2rem;
+  font-size: 8px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 8px 20px 8px;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: uppercase;
+}
+
+.btndiv {
+  text-align: center;
+}
+.button52:after {
+  content: "";
+  background-color: #311465;
+  width: 100%;
+  z-index: -1;
+  border-radius: 2rem;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .list {
+    grid-gap: 1rem;
+  }
+  .linkpara {
+    font-size: 1.75rem;
+  }
+  .responder {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .list {
+    grid-gap: 5rem;
+  }
+  .linkpara {
+    font-size: 1.75rem;
+  }
+  .responder {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) {
+}

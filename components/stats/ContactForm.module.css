@@ -1,0 +1,93 @@
+.totalcontactform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10rem 8rem;
+  background-color: #f4f4f4;
+}
+
+.contacttitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacttitle > .sectionheading {
+  font-size: 3rem;
+  color: #311465;
+  text-transform: uppercase;
+  border-bottom: 3px solid #2e186a;
+  margin-bottom: 1.7rem;
+}
+
+.contacttitle > p {
+  font-size: 1.3rem;
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+.contactform > form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform > form > div > label {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.contactform > form > div > input {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contactform > form > div > textarea {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .totalcontactform {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 11rem 5rem;
+  }
+  .contacttitle > p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .totalcontactform {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 11rem 5rem;
+  }
+  .contacttitle > p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .totalcontactform {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 11rem 5rem;
+  }
+  .contacttitle > p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) {
+}

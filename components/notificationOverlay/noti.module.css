@@ -1,0 +1,31 @@
+/* noti.module.css */
+
+.notification {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  background-color: #311465;
+  color: white;
+  padding: 0.4vw;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
+  max-width: 300px;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  z-index: 1;
+}
+
+.tick {
+  background-color: #736294; /* Green color for the tick background */
+  color: white;
+  padding: 0.3em;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+.notification.show {
+  transform: translateX(0);
+}

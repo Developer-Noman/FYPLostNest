@@ -1,0 +1,304 @@
+
+.main {
+  background-color: #f7f7f7;
+  padding: 8rem 6rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+
+}
+
+
+
+.userview {
+  background-color: #fff;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: auto;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.userviewmenu {
+  -webkit-box-flex: 32rem;
+  -ms-flex: 32rem 0 0px;
+  flex: 32rem 0 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#7a48d8),
+    to(#311465)
+  );
+  
+  background-image: linear-gradient(to right bottom, #7a48d8, #311465);
+  padding: 4rem 0;
+}
+
+
+.sidenav {
+  list-style: none;
+}
+.sidenav li {
+/* display: flex; */
+
+  margin: 1rem 0;
+  padding-left: 2rem;
+  border-left: 0 solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+.sidenavactive,
+.sidenav li:hover {
+  border-left: 4px solid #fff !important;
+}
+.sidenavactive a {
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.sidenav a:link,
+.sidenav a:visited {
+  padding: 1rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sidenav a:hover,
+.sidenav a:active {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.sidenav svg {
+  height: 1.9rem;
+  width: 1.9rem;
+  fill: #f7f7f7;
+  margin-right: 2rem;
+}
+
+.adminnav {
+  margin-top: 5.5rem;
+}
+.adminnavheading {
+  margin: 0 5rem 1.5rem 4rem;
+  padding-bottom: 3px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  border-bottom: 1px solid currentColor;
+}
+.userviewcontent {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 7rem 0;
+}
+.userviewformcontainer {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+.headingsecondary {
+  text-align: center;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7a48d8),
+    to(#311465)
+  );
+ 
+  background-image: linear-gradient(to right, #7a48d8, #311465);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+}
+
+.mabtmd {
+  margin-bottom: 3rem !important;
+}
+
+
+.loginform {
+  margin: 0 auto;
+  max-width: 55rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 5rem 7rem;
+  border-radius: 5px;
+}
+
+.forminput {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  background-color: #f2f2f2;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Pseudo element (a visible thing that isn't really in the DOM).
+      Also needs -ms- */
+}
+.forminput:focus {
+  outline: none;
+  border-bottom: 3px solid #345b97;
+}
+.forminput:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.forminput::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.formgroup:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.formlabel {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.formphotoupload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.formuserphoto {
+  height: 7.5rem;
+  width: 7.5rem;
+  /* background-position: center;
+  background-size: cover; */
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: 1px solid #311465;
+}
+
+.formupload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.formupload:focus + label {
+  outline: 3px solid #55c57a;
+  outline-offset: 3px;
+}
+
+.formupload + label {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.formupload + label:hover {
+  background-color: #55c57a;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.line {
+  margin: 6rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #311465;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .userview {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userviewmenu {
+    width: 100%;
+    
+    padding: 4rem 0;
+  }
+  
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .userview {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userviewmenu {
+    width: 50%;
+    
+    padding: 4rem 0;
+  }
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .userview {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userviewmenu {
+    width: 50%;
+    
+    padding: 4rem 0;
+  }
+  
+  
+}
+
+

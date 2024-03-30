@@ -1,0 +1,25 @@
+.centermain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .center {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .center {
+    width: auto;
+  }
+}
+
+

@@ -1,0 +1,77 @@
+.spaner {
+ 
+  font-size: 1.5rem;
+  color: #fff;
+  background: #311465;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0;
+  border-radius: 0.3rem;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 12px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: #311465 -2px -2px 0px 2px, rgb(0, 0, 0) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: rgb(0, 0, 0) -2px -2px 0px 2px, #311465 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
+}
+
+
+.list{
+  font-size: 1.5rem;
+  border: 1px solid #311465;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.maindiv{
+  background: #311465;
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.responsemain{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: #f4f4f4;
+}
+
+.btndiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+
